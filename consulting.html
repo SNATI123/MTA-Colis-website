@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étude et Services de Conseil - Votre Partenaire Logistique de Confiance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Accueil</a></li>
+                <li class="services-dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="road-transport.html">Transport Routier</a></li>
+                        <li><a href="sea-transport.html">Transport Maritime</a></li>
+                        <li><a href="air-transport.html">Transport Aérien</a></li>
+                        <li><a href="warehousing.html">Entreposage</a></li>
+                        <li><a href="consulting.html" class="active">Étude et Conseil</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#estimation">Estimation</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <div id="loader" style="display:none;">
+            <div class="loader-circle">
+                <i class="fas fa-truck"></i>
+            </div>
+        </div>
+    
+        <script>
+          window.addEventListener('beforeunload', function() {
+            document.getElementById('loader').style.display = 'block';
+            setTimeout(function() {
+              document.getElementById('loader').style.display = 'none';
+            }, 9000);
+          });
+        </script>
+    
+
+        <!-- Hero Section -->
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/bannerConseil1.jpg'); background-size: cover; background-position: center;">
+            <div class="page-hero-content">
+                <h1>Étude et Services de Conseil</h1>
+                <p>Analyse logistique experte et solutions stratégiques pour optimiser votre chaîne d'approvisionnement</p>
+            </div>
+        </section>
+
+        <!-- Consulting Overview -->
+        <section class="service-detail">
+            <div class="container">
+                <h2>Notre Approche de Conseil</h2>
+                <p class="service-intro">
+                    Notre équipe de consultants logistiques expérimentés offre une analyse complète et des recommandations stratégiques
+                    pour optimiser vos opérations de chaîne d'approvisionnement. Nous combinons expertise sectorielle et
+                    analyses basées sur les données pour identifier les opportunités d'amélioration et développer des solutions sur mesure
+                    qui améliorent l'efficacité, réduisent les coûts et renforcent la qualité du service.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature">
+                        <i class="fas fa-search"></i>
+                        <h3>Analyse de la Chaîne d'Approvisionnement</h3>
+                        <p>Évaluation complète de vos opérations actuelles de chaîne d'approvisionnement pour identifier les forces, faiblesses et opportunités d'amélioration.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Optimisation du Réseau</h3>
+                        <p>Analyse stratégique de votre réseau de distribution pour déterminer les emplacements optimaux des installations, les itinéraires de transport et le placement des stocks.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Études de Réduction des Coûts</h3>
+                        <p>Analyse détaillée des coûts pour identifier les inefficacités et développer des stratégies de réduction des coûts de transport, d'entreposage et de stocks.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-tasks"></i>
+                        <h3>Amélioration des Processus</h3>
+                        <p>Examen des processus opérationnels pour rationaliser les flux de travail, éliminer les goulots d'étranglement et améliorer la productivité.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consulting Services Section -->
+        <section class="fleet-section">
+            <div class="container">
+                <h2>Nos Services de Conseil</h2>
+                <p>Nous offrons une gamme de services de conseil spécialisés pour répondre à vos défis logistiques spécifiques :</p>
+                
+                <div class="fleet-types">
+                    <div class="fleet-type">
+                        <h3>Stratégie de Transport</h3>
+                        <ul>
+                            <li>Sélection et optimisation des modes</li>
+                            <li>Sélection et gestion des transporteurs</li>
+                            <li>Optimisation des itinéraires</li>
+                            <li>Analyse et recommandations de flotte</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Entreposage & Distribution</h3>
+                        <ul>
+                            <li>Analyse de l'emplacement des installations</li>
+                            <li>Conception et optimisation de l'agencement</li>
+                            <li>Évaluation des systèmes de manutention</li>
+                            <li>Stratégies de gestion des stocks</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Mise en Œuvre de la Technologie</h3>
+                        <ul>
+                            <li>Assistance à la sélection TMS et WMS</li>
+                            <li>Développement de feuille de route technologique</li>
+                            <li>Planification de l'intégration des systèmes</li>
+                            <li>Support à la mise en œuvre</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Initiatives de Durabilité</h3>
+                        <ul>
+                            <li>Évaluation de l'empreinte carbone</li>
+                            <li>Stratégies de logistique verte</li>
+                            <li>Conseils sur la conformité réglementaire</li>
+                            <li>Solutions d'emballage durable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="coverage-section">
+            <div class="container">
+                <h2>Notre Méthodologie de Conseil</h2>
+                <p>Nous suivons une approche structurée pour fournir des informations exploitables et des résultats mesurables :</p>
+                
+                <div class="coverage-map">
+                    <img src="img/bannerConseil.jpg" alt="Méthodologie de Conseil" onerror="this.src='https://via.placeholder.com/1200x600?text=Méthodologie+de+Conseil'">
+                </div>
+                
+                <div class="coverage-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-clipboard"></i>
+                        <h3>Évaluation</h3>
+                        <p>Collecte et analyse complètes des données sur les opérations actuelles, les défis et les objectifs.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Conception de Solution</h3>
+                        <p>Développement de stratégies et recommandations sur mesure basées sur les résultats de l'analyse.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Mise en Œuvre</h3>
+                        <p>Support pour l'exécution des changements recommandés avec des plans d'action clairs et des délais.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Mesure</h3>
+                        <p>Suivi continu des performances et affinage pour garantir des résultats durables.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Histoires de Succès</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <i class="fas fa-truck"></i>
+                        <h3>Réduction des Coûts de Transport</h3>
+                        <p>A aidé un client manufacturier à réduire les coûts de transport de 18% grâce à la consolidation des transporteurs et à l'optimisation des modes.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-warehouse"></i>
+                        <h3>Redesign du Réseau de Distribution</h3>
+                        <p>Optimisation du réseau de distribution d'un détaillant, réduisant les délais de livraison de 24% et diminuant les coûts logistiques de 15%.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Optimisation des Stocks</h3>
+                        <p>Réduction des niveaux de stocks d'un client de 22% tout en maintenant des niveaux de service de 99,5% grâce à une amélioration des prévisions et de la planification.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Partenariats Fiables</h3>
+                        <p>Collaboration avec des partenaires de confiance pour assurer des solutions logistiques transparentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Besoin de Services de Conseil ?</h2>
+                <p>Contactez nos experts en conseil pour une assistance immédiate ou demandez un devis en ligne.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn primary">Contactez-Nous</a>
+                    <a href="index.html#estimation" class="btn secondary">Obtenir un Devis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos de Nous</h3>
+                <p>Votre partenaire de confiance depuis plus de 25 ans en solutions de transport et logistique internationale.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 3 RUE DU TE BAT 3440 ZONE FRET CARGO 7 AEROPORT ROISSY CH DE GAULLE CEDEX 93290 TREMBLAY EN FRANCE</p>
+                <p><i class="fas fa-phone"></i> + 33 6 18 54 07 66</p>
+                <p><i class="fas fa-envelope"></i> contact@mtacolis.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-Nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MTA GOPIC FRANCE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

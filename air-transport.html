@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services de Transport Aérien - Votre Partenaire Logistique de Confiance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Accueil</a></li>
+                <li class="services-dropdown">
+                    <a href="index.html#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="road-transport.html">Transport Routier</a></li>
+                        <li><a href="sea-transport.html">Transport Maritime</a></li>
+                        <li><a href="air-transport.html" class="active">Transport Aérien</a></li>
+                        <li><a href="warehousing.html">Entreposage</a></li>
+                        <li><a href="consulting.html">Étude et Conseil</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#estimation">Estimation</a></li>
+                <li><a href="index.html#about">À propos</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="loader" style="display:none;">
+        <div class="loader-circle">
+            <i class="fas fa-plane"></i>
+        </div>
+    </div>
+
+    <script>
+      window.addEventListener('beforeunload', function() {
+        document.getElementById('loader').style.display = 'block';
+        setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+        }, 9000);
+      });
+    </script>
+
+
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/bannerAeriens1.jpg'); background-size: cover; background-position: center;">
+            <div class="page-hero-content">
+                <h1>Services de Transport Aérien</h1>
+                <p>Solutions de fret aérien rapides et fiables pour des expéditions critiques dans le monde entier</p>
+            </div>
+        </section>
+
+        <!-- Air Transport Overview -->
+        <section class="service-detail">
+            <div class="container">
+                <h2>Nos Solutions de Transport Aérien</h2>
+                <p class="service-intro">
+                    Nous fournissons des services de fret aérien premium conçus pour la rapidité et la fiabilité.
+                    Lorsque le temps est critique, notre réseau aérien mondial garantit que votre cargaison atteint sa destination
+                    rapidement et en toute sécurité, avec des options de service adaptées à vos besoins spécifiques.
+                </p>
+                
+                <div class="service-features">
+                    <div class="feature">
+                        <i class="fas fa-plane"></i>
+                        <h3>Fret Aérien Express</h3>
+                        <p>Livraison à temps défini pour les expéditions urgentes, avec traitement prioritaire et dédouanement accéléré.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-calendar-check"></i>
+                        <h3>Fret Aérien Programmé</h3>
+                        <p>Services réguliers et fiables sur les principales voies commerciales avec des tarifs compétitifs pour les cargaisons moins urgentes.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-temperature-low"></i>
+                        <h3>Transport à Température Contrôlée</h3>
+                        <p>Solutions spécialisées pour les produits pharmaceutiques, périssables et autres produits sensibles à la température.</p>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-weight"></i>
+                        <h3>Cargaison Surdimensionnée & Projets</h3>
+                        <p>Gestion experte des articles volumineux, lourds ou inhabituels avec des avions et équipements spécialisés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Network Coverage Section -->
+        <section class="fleet-section">
+            <div class="container">
+                <h2>Notre Réseau Aérien Mondial</h2>
+                <p>Nous offrons une couverture étendue grâce à des partenariats avec des compagnies aériennes et des transporteurs de fret leaders :</p>
+                
+                <div class="fleet-types">
+                    <div class="fleet-type">
+                        <h3>Routes Intercontinentales</h3>
+                        <ul>
+                            <li>Europe vers Amérique du Nord : 1-2 jours</li>
+                            <li>Europe vers Asie : 2-3 jours</li>
+                            <li>Plusieurs vols quotidiens sur les principales routes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Réseaux Régionaux</h3>
+                        <ul>
+                            <li>Intra-européen : Le jour même - lendemain</li>
+                            <li>Intra-asiatique : 1-2 jours</li>
+                            <li>Connexions haute fréquence</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Marchés Émergents</h3>
+                        <ul>
+                            <li>Afrique : 2-4 jours depuis les principaux hubs</li>
+                            <li>Amérique du Sud : 2-3 jours</li>
+                            <li>Moyen-Orient : 1-2 jours</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="fleet-type">
+                        <h3>Types d'Avions</h3>
+                        <ul>
+                            <li>Avions cargo gros-porteurs pour les routes longues distances</li>
+                            <li>Avions de ligne pour les services régionaux</li>
+                            <li>Options de charter pour des besoins spéciaux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Levels -->
+        <section class="coverage-section">
+            <div class="container">
+                <h2>Nos Niveaux de Service</h2>
+                <p>Nous offrons des options de service flexibles pour répondre à vos exigences spécifiques de temps et de budget :</p>
+                
+                <div class="coverage-map">
+                    <img src="img/bannerAeriens1.jpg" alt="Réseau Aérien Mondial">
+                </div>
+                
+                <div class="coverage-highlights">
+                    <div class="highlight">
+                        <i class="fas fa-bolt"></i>
+                        <h3>Express Prioritaire</h3>
+                        <p>Notre option la plus rapide avec des délais de livraison garantis et un traitement prioritaire tout au long du processus.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <i class="fas fa-business-time"></i>
+                        <h3>Business Air</h3>
+                        <p>Service fiable avec des temps de transit définis pour les expéditions critiques pour les entreprises.</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Économie Aérienne</h3>
+                        <p>Solution économique pour les expéditions moins urgentes avec des tarifs compétitifs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Industry Solutions -->
+        <section class="benefits-section">
+            <div class="container">
+                <h2>Solutions de Fret Aérien Spécifiques à l'Industrie</h2>
+                
+                <div class="benefits-grid">
+                    <div class="benefit">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Santé & Pharmaceutique</h3>
+                        <p>Services conformes aux BPD avec surveillance de la température et gestion spécialisée pour les produits sensibles.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Haute Technologie & Électronique</h3>
+                        <p>Transport sécurisé avec mesures de sécurité renforcées et manipulation soigneuse pour les composants de valeur.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Mode & Détail</h3>
+                        <p>Solutions à temps défini pour les produits saisonniers et la gestion d'inventaire juste-à-temps.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-car"></i>
+                        <h3>Automobile</h3>
+                        <p>Services spécialisés pour les pièces critiques, prototypes et composants sensibles au temps.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-apple-alt"></i>
+                        <h3>Périssables</h3>
+                        <p>Solutions à température contrôlée avec traitement accéléré pour préserver la fraîcheur et la qualité.</p>
+                    </div>
+                    
+                    <div class="benefit">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Partenariats Fiables</h3>
+                        <p>Collaboration avec des partenaires de confiance pour assurer des solutions logistiques transparentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>Besoin de Services de Transport Aérien ?</h2>
+                <p>Contactez nos spécialistes en transport aérien pour une assistance immédiate ou demandez un devis en ligne.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn primary">Contactez-Nous</a>
+                    <a href="index.html#estimation" class="btn secondary">Obtenir un Devis</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos de Nous</h3>
+                <p>Votre partenaire de confiance depuis plus de 25 ans en solutions de transport et logistique internationale.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 3 RUE DU TE BAT 3440 ZONE FRET CARGO 7 AEROPORT ROISSY CH DE GAULLE CEDEX 93290 TREMBLAY EN FRANCE</p>
+                <p><i class="fas fa-phone"></i> + 33 6 18 54 07 66</p>
+                <p><i class="fas fa-envelope"></i> contact@mtacolis.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-Nous</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MTA GOPIC FRANCE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

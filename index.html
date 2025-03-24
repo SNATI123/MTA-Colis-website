@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MtaColis - Transport & Logistique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li class="services-dropdown">
+                    <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="road-transport.html">Transport Routier</a></li>
+                        <li><a href="sea-transport.html">Transport Maritime</a></li>
+                        <li><a href="air-transport.html">Transport Aérien</a></li>
+                        <li><a href="warehousing.html">Entreposage</a></li>
+                        <li><a href="consulting.html">Étude et Conseil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#estimation">Estimation</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <!-- Slideshow text content -->
+            <div class="slideshow-text">
+                <div class="slide-text slide-text-1 active">                    
+                    <h2>Solutions Logistiques Globales</h2>
+                    <p>Connecter les entreprises du monde entier avec des services de transport fiables</p>
+                </div>
+                <div class="slide-text slide-text-2">
+                    <h2>Excellence du Fret Aérien</h2>
+                    <p>Transport aérien rapide et sécurisé pour les envois urgents</p>
+                </div>
+                <div class="slide-text slide-text-3">
+                    <h2>Entreposage & Distribution</h2>
+                    <p>Installations à la pointe de la technologie pour tous vos besoins de stockage</p>
+                </div>
+                <div class="slide-text slide-text-4">
+                    <h2>Transport Maritime</h2>
+                    <p>Solutions de fret maritime efficaces pour le commerce mondial</p>
+                </div>
+            </div>
+
+
+            <div class="hero-content">
+                <h1>Votre leader depuis plus de 25 ans en Transport & Logistique</h1>
+                <p>Services de livraison rapides, sécurisés et fiables à l'international</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn primary">Contactez-Nous</a>
+                    <a href="#estimation" class="btn secondary">Obtenir un Devis</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <a href="road-transport.html">
+                    <div class="service-card">
+                        <i class="fas fa-truck"></i>
+                        <h3>Transport Terrestre</h3>
+                        <p>Solutions de fret routier fiables à travers le pays</p>
+                    </div>
+                </a>
+
+                <a href="air-transport.html">
+                    <div class="service-card">
+                        <i class="fas fa-plane"></i>
+                        <h3>Fret Aérien</h3>
+                        <p>Services de livraison aérienne express dans le monde entier</p>
+                    </div>
+                </a>
+                <a href="sea-transport.html">
+                    <div class="service-card">
+                        <i class="fas fa-ship"></i>
+                        <h3>Fret Maritime</h3>
+                        <p>Solutions d'expédition maritime internationale</p>
+                    </div>
+                </a>
+
+                <a href="warehousing.html">
+                    <div class="service-card">
+                        <i class="fas fa-warehouse"></i>
+                        <h3>Entreposage</h3>
+                        <p>Stockage sécurisé et gestion des inventaires</p>
+                    </div>
+                </a>
+                <a href="consulting.html">
+                    <div class="service-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Étude et Conseil</h3>
+                        <p>Solutions personnalisées pour optimiser votre chaîne logistique</p>
+                    </div>
+
+                </a>
+            </div>
+        </section>
+
+        <section id="estimation" class="estimation">
+            <h2>Estimation des Coûts</h2>
+            <div class="estimation-container">
+                <form id="estimation-form" class="estimation-form">
+                    <div class="form-group">
+                        <label for="boarding-place">Lieu d'Embarquement</label>
+                        <div class="location-selectors">
+                            <div class="select-group">
+                                <select id="boarding-country" class="country-select" required>
+                                    <option value="">Sélectionner le Pays</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <select id="boarding-city" class="city-select" required>
+                                    <option value="">Sélectionner la Ville</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="delivery-place">Lieu de Livraison</label>
+                        <div class="location-selectors">
+                            <div class="select-group">
+                                <select id="delivery-country" class="country-select" required>
+                                    <option value="">Sélectionner le Pays</option>
+                                </select>
+                            </div>
+                            <div class="select-group">
+                                <select id="delivery-city" class="city-select" required>
+                                    <option value="">Sélectionner la Ville</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">Poids du Produit (kg)</label>
+                        <input type="number" id="weight" min="0.1" step="0.1" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="delivery-mode">Mode de Livraison</label>
+                        <select id="delivery-mode" required>
+                            <option value="">Sélectionner le mode de livraison</option>
+                            <option value="plane">Transport Aérien</option>
+                            <option value="truck">Transport Routier</option>
+                            <option value="boat">Transport Maritime</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn primary">Calculer l'Estimation</button>
+                </form>
+
+                <div id="estimation-result" class="estimation-result">
+                    <h3>Coût Estimé</h3>
+                    <div id="cost-display cost" ></div>
+                    <div id="route-details"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>À propos de MTA GOPIC FRANCE</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>MTA GOPIC FRANCE est une entreprise de transport et logistique leader, engagée à fournir un service exceptionnel et des solutions innovantes à nos clients dans le monde entier.</p>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Support Client 24/7</li>
+                        <li><i class="fas fa-check"></i> Réseau Global</li>
+                        <li><i class="fas fa-check"></i> Suivi en Temps Réel</li>
+                        <li><i class="fas fa-check"></i> Manipulation Sécurisée</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contactez-Nous</h2>
+            <div class="contact-container">
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="93c9def4-f8e9-4051-9920-8bc9f8cb28f2">
+                    
+                    <input type="text" name="name" placeholder="Nom" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="phone" placeholder="Téléphone">
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    
+                    <button type="submit" class="btn primary">Envoyer le Message</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MTA GOPIC FRANCE</h3>
+                <p>Votre partenaire de confiance depuis plus de 25 ans en solutions de transport et logistique internationale.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Rapides</h3>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#estimation">Estimation des couts</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Informations de Contact</h3>
+                <p><i class="fas fa-phone"></i> + 33 6 18 54 07 66</p>
+                <p><i class="fas fa-envelope"></i> contact@mtacolis.com</p>
+                <p><i class="fas fa-location-dot"></i> 3 Rue du TE, BAT 3440 A ZONE FRET CARGO 7 Aéroport Roissy CDG, 93290 Tremblay en France</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 MTA GOPIC FRANCE. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div id="loader" style="display:none;">
+        <div class="loader-circle">
+            <i class="fas fa-truck"></i>
+        </div>
+    </div>
+
+    <script>
+      window.addEventListener('beforeunload', function() {
+        document.getElementById('loader').style.display = 'block';
+        setTimeout(function() {
+          document.getElementById('loader').style.display = 'none';
+        }, 9000);
+      });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
