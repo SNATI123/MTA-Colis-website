@@ -491,6 +491,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
+    text-decoration: underline;
 }
 
 .footer-section p {
@@ -508,6 +509,11 @@ footer {
 .footer-section a {
     color: var(--white);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--secondary-color);
 }
 
 .footer-bottom {
