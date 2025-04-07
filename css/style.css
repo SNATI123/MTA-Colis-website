@@ -102,6 +102,39 @@ body {
     color: var(--secondary-color);
 }
 
+
+/* Menu déroulant mobile */
+@media screen and (max-width: 768px) {
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        padding: 10px;
+        border-radius: 0 0 5px 5px;
+        z-index: 1000;
+    }
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+    .dropdown-menu li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-menu a {
+        padding: 10px 15px;
+        display: block;
+    }
+}
+
+
+
 /* Hero Section */
 .hero {
     height: 100vh;

@@ -2,10 +2,55 @@
 document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
+    const servicesDropdown = document.querySelector('.services-dropdown');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
 
-    hamburger.addEventListener('click', () => {
+
+     // Gestion du menu hamburger
+     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
+
+    // Gestion du menu déroulant des services sur mobile
+    if (servicesDropdown) {
+        servicesDropdown.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768) { // Seulement sur mobile
+                e.preventDefault();
+                dropdownMenu.classList.toggle('active');
+            }
+        });
+
+        // Gestion des clics sur les liens du menu déroulant
+        dropdownMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const href = link.getAttribute('href');
+                
+                // Si c'est un lien interne (#section)
+                if (href.startsWith('#')) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        // Fermer le menu hamburger et le menu déroulant
+                        navLinks.classList.remove('active');
+                        dropdownMenu.classList.remove('active');
+                    }
+                } else {
+                    // Pour les liens externes, rediriger vers la page
+                    window.location.href = href;
+                }
+            });
+        });
+
+        // Fermer le menu déroulant lorsqu'on clique ailleurs
+        document.addEventListener('click', (e) => {
+            if (!servicesDropdown.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.classList.remove('active');
+            }
+        });
+    }
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
