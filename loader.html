@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Loader</title>
+  <style>
+    /* Code CSS du loader ici */
+    .loader-container {
+      position: relative;
+      width: 300px;
+      height: 100px;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .road {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background: #555;
+    }
+
+    .road::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: repeating-linear-gradient(
+        to right,
+        #fff,
+        #fff 20px,
+        transparent 20px,
+        transparent 40px
+      );
+      transform: translateY(-50%);
+    }
+
+    .truck {
+      position: absolute;
+      bottom: 40px;
+      left: -100px;
+      width: 100px;
+      height: 40px;
+      background: #3498db;
+      border-radius: 8px;
+      animation: moveTruck 3s linear infinite;
+    }
+
+    .window {
+      position: absolute;
+      top: 8px;
+      right: 10px;
+      width: 25px;
+      height: 15px;
+      background: #ecf0f1;
+      border-radius: 3px;
+    }
+
+    .wheel {
+      width: 15px;
+      height: 15px;
+      background: #2c3e50;
+      border-radius: 50%;
+      position: absolute;
+      bottom: -7px;
+    }
+
+    .wheel1 { left: 10px; }
+    .wheel2 { left: 30px; }
+    .wheel3 { left: 60px; }
+    .wheel4 { left: 80px; }
+
+    @keyframes moveTruck {
+      0% { left: -100px; }
+      100% { left: 300px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <div class="road"></div>
+    <div class="truck">
+      <div class="window"></div>
+      <div class="wheel wheel1"></div>
+      <div class="wheel wheel2"></div>
+      <div class="wheel wheel3"></div>
+      <div class="wheel wheel4"></div>
+    </div>
+  </div>
+</body>
+</html>
